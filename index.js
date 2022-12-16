@@ -92,7 +92,32 @@ var finances = [
 
 // Your task is to write JavaScript code that analyzes the records to calculate each of the following:
 
+
+// *** var introtext = define
+//  console.log Intro text;
+//  console.log Financial Analysis;
+//  console.log -----------------;
+//  count items in a string, store in a CountVariable
+//  console.log "Total Months: "+CountVariable;
+//  count total profits, store in a ProfitVariable
+//  console.log "Total Profits: "+ProfitVariable
+//  count total losses, store in a LossVariable
+//  console.log "Total losses: "+ LossVariable
+//  count average change, store in a ChangeVariable
+//  console.log "Average Change: "+ChangeVariable
+//  count greatest increase in profits, store in IncreaseVariable
+//  console.log "Greatest Increase in Profits: "+IncreaseVariable
+//  count greatest decrease in profits, store in DecreaseVariable
+//  console.log "Greatest Decrease in Profits: "+DecreaseVariable
+//  console.log -----
+
+
+
+
+
+
 // * The total number of months included in the dataset.
+
 
 // * The net total amount of Profit/Losses over the entire period.
 
