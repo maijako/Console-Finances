@@ -157,6 +157,14 @@ console.log("Total profits: $"+totalProfits);
 
 
 //  count total losses,f store in a LossVariable
+var lossesList = []
+for (var i = 0; i<financeNum.length; i++) {
+    if(financeNum[i]<0) {
+        lossesList.push(financeNum[i]);
+    }
+}
+console.log(lossesList);
+
 //  console.log "Total losses: "+ LossVariable
 
 //  count average change, store in a ChangeVariable
