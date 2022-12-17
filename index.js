@@ -127,18 +127,23 @@ console.log ("-------------------------");
 //  console.log "Total Months: "+CountVariable;
 console.log ("Total Months: "+finances.length);
 
-//  count total profits, store in a ProfitVariable
-//  console.log "Total Profits: "+ProfitVariable
 
-var financeNum = [];
+//extract all the numbers from the array and store then in a new variable
+var financeNum = []
 for (var i = 0; i < finances.length; i++) {
     financeNum.push (finances[i][1]);
 }
-console.log(financeNum);
 
+//  count total profits, store in a ProfitVariable
 
-
-
+var profitsList = []
+for (var i = 0; i<financeNum.length; i++) {
+    if(financeNum[i]>0) {
+        profitsList.push(financeNum[i]);
+    }
+}
+//  console.log "Total Profits: "+ProfitVariable
+console.log(profitsList);
 
 
 
