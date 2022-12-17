@@ -156,16 +156,21 @@ for(var i=0; i<profitsList.length; i++){
 console.log("Total profits: $"+totalProfits);
 
 
-//  count total losses,f store in a LossVariable
+//  count total losses, store in a LossVariable
 var lossesList = []
 for (var i = 0; i<financeNum.length; i++) {
     if(financeNum[i]<0) {
         lossesList.push(financeNum[i]);
     }
 }
-console.log(lossesList);
-
 //  console.log "Total losses: "+ LossVariable
+var totalLosses = 0;
+for(var i=0; i<lossesList.length; i++){
+    totalLosses = totalLosses + lossesList[i];
+}
+console.log("Total losses: $"+totalLosses);
+
+
 
 //  count average change, store in a ChangeVariable
 //  console.log "Average Change: "+ChangeVariable
