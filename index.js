@@ -170,12 +170,16 @@ for(var i=0; i<lossesList.length; i++){
 }
 console.log("Total losses: $"+totalLosses);
 
-
-
 //  count average change, store in a ChangeVariable
 //  console.log "Average Change: "+ChangeVariable
+
+
+
 //  count greatest increase in profits, store in IncreaseVariable
 //  console.log "Greatest Increase in Profits: "+IncreaseVariable
+
+
+
 //  count greatest decrease in profits, store in DecreaseVariable
 //  console.log "Greatest Decrease in Profits: "+DecreaseVariable
 //  console.log -----
