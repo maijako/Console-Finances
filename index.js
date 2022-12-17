@@ -120,9 +120,6 @@ var finances = [
 
 // PSEUDOCODE
 //  console.log Intro text;
-//  console.log Financial Analysis;
-//  console.log -----------------;
-console.log ("Analyzing financial data");
 console.log ("Financial Analysis");
 console.log ("-------------------------");
 
@@ -133,7 +130,20 @@ console.log ("Total Months: "+finances.length);
 //  count total profits, store in a ProfitVariable
 //  console.log "Total Profits: "+ProfitVariable
 
-//  count total losses, store in a LossVariable
+var financeNum = [];
+for (var i = 0; i < finances.length; i++) {
+    financeNum.push (finances[i][1]);
+}
+console.log(financeNum);
+
+
+
+
+
+
+
+
+//  count total losses,f store in a LossVariable
 //  console.log "Total losses: "+ LossVariable
 
 //  count average change, store in a ChangeVariable
