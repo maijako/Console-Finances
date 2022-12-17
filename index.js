@@ -134,8 +134,14 @@ for (var i = 0; i < finances.length; i++) {
     financeNum.push (finances[i][1]);
 }
 
-//  count total profits, store in a ProfitVariable
+//count the overall Total that includes both Profits and Losses
+var total = 0;
+for(var i=0; i<finances.length; i++){
+    total = total + finances[i][1];
+}
+console.log("Total: $"+total);
 
+//  count total profits, store in a ProfitVariable
 var profitsList = []
 for (var i = 0; i<financeNum.length; i++) {
     if(financeNum[i]>0) {
@@ -143,9 +149,11 @@ for (var i = 0; i<financeNum.length; i++) {
     }
 }
 //  console.log "Total Profits: "+ProfitVariable
-console.log(profitsList);
-
-
+var totalProfits = 0;
+for(var i=0; i<profitsList.length; i++){
+    totalProfits = totalProfits + profitsList[i];
+}
+console.log("Total profits: $"+totalProfits);
 
 
 //  count total losses,f store in a LossVariable
