@@ -86,16 +86,6 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-//__________________________________________________________________________________
-// Example:
-    //   Financial Analysis
-    //   ----------------------------
-    //   Total Months: 25
-    //   Total: $2561231
-    //   Average  Change: $-2315.12
-    //   Greatest Increase in Profits: Feb-2012 ($1926159)
-    //   Greatest Decrease in Profits: Sep-2013 ($-2196167)
-//__________________________________________________________________________________
 
 //  console.log Intro text;
 console.log ("Financial Analysis");
@@ -169,7 +159,7 @@ var greatestIncrease = (Math.max(...differences));
 var greatestIndex = (differences.indexOf(greatestIncrease));
 
 // log the greatest increase in Profits along with the month by adding +1 to the month index
-console.log ("The greatest increase in profits: "+finances[greatestIndex+1][0] + "($"+ greatestIncrease+")");
+console.log ("The greatest increase in profits: "+finances[greatestIndex+1][0] + " ($"+ greatestIncrease+")");
 
 
 // find the greatest profit loss using math.min
@@ -180,7 +170,7 @@ var lossIndex = (differences.indexOf(greatestLoss));
 
 
 // log the greatest decrease in Profits along with the month by adding +1 to the month index
-console.log ("The greatest decrease in profits: "+finances[lossIndex+1][0] + "($"+ greatestLoss+")");
+console.log ("The greatest decrease in profits: "+finances[lossIndex+1][0] + " ($"+ greatestLoss+")");
 
 
 
