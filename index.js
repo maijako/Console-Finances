@@ -86,20 +86,8 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-
-//THE TASK INSTRUCTIONS
-// // You have been given a dataset composed of arrays with two fields, Date and Profit/Losses.
-// // Your task is to write JavaScript code that analyzes the records to calculate each of the following:
-//     // * The total number of months included in the dataset.
-//     // * The net total amount of Profit/Losses over the entire period.
-    // * The average of the **changes** in Profit/Losses over the entire period.
-    //   * You will need to track what the total change in profits are from month to month and then find the average.
-    //   * (`Total/Number of months`)
-    // * The greatest increase in profits (date and amount) over the entire period.
-    // * The greatest decrease in losses (date and amount) over the entire period.
-
+//__________________________________________________________________________________
 // Example:
-    //   ```text
     //   Financial Analysis
     //   ----------------------------
     //   Total Months: 25
@@ -107,15 +95,8 @@ var finances = [
     //   Average  Change: $-2315.12
     //   Greatest Increase in Profits: Feb-2012 ($1926159)
     //   Greatest Decrease in Profits: Sep-2013 ($-2196167)
-    //   ```
+//__________________________________________________________________________________
 
-// **Hints:**
-    // * Remember, in order to combine strings and variables in the console you will need to use **concatenation**.
-    // * How do you only print to the nearest 100th in JavaScript?
-
-//________________________________________________________________________________________________________________
-
-// PSEUDOCODE
 //  console.log Intro text;
 console.log ("Financial Analysis");
 console.log ("-------------------------");
@@ -125,13 +106,13 @@ console.log ("-------------------------");
 console.log ("Total Months: "+finances.length);
 
 
-//extract all the numbers from the array and store then in a new variable
+//  extract all the numbers from the array and store then in a new variable
 var financeNum = []
 for (var i = 0; i < finances.length; i++) {
     financeNum.push (finances[i][1]);
 }
 
-//count the overall Total that includes both Profits and Losses
+//  count the overall Total that includes both Profits and Losses
 var total = 0;
 for(var i=0; i<finances.length; i++){
     total = total + finances[i][1];
@@ -167,21 +148,17 @@ for(var i=0; i<lossesList.length; i++){
 }
 console.log("Total losses: $"+totalLosses);
 
-
-// count differences in profits each month, store in a differences variable
+//  count differences in profits each month, store in a differences variable
 var differences = financeNum.slice(1).map((x,i)=> financeNum[i]-x);
 
-//calculate total of differences in profits over the entire period
-var totalDiff = 0
+//  calculate total of differences in profits over the entire period
+var totalDiff = 0;
 for(var i=0; i<differences.length; i++){
     totalDiff = totalDiff + differences[i];
 }
-//divide the total of differences by the number of months to find the average change
-var averageChange = totalDiff/86
+//  divide the total of differences by the number of months to find the average change
+var averageChange = totalDiff/86;
 console.log("Average Change in Profits: $"+averageChange);
-
-//  count average change, store in a ChangeVariable
-//  console.log "Average Change: "+ChangeVariable
 
 //  count greatest increase in profits, store in IncreaseVariable
 //  console.log "Greatest Increase in Profits: "+IncreaseVariable
@@ -190,7 +167,7 @@ console.log("Average Change in Profits: $"+averageChange);
 
 //  count greatest decrease in profits, store in DecreaseVariable
 //  console.log "Greatest Decrease in Profits: "+DecreaseVariable
-//  console.log -----
+
 
 
 
