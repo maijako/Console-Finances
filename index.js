@@ -172,13 +172,16 @@ var greatestIndex = (differences.indexOf(greatestIncrease));
 console.log ("The greatest increase in profits: "+finances[greatestIndex+1][0] + "($"+ greatestIncrease+")");
 
 
+// find the greatest profit loss using math.min
+var greatestLoss = (Math.min(...differences));
+
+// find the index position of the greatestLoss variable 
+var lossIndex = (differences.indexOf(greatestLoss));
 
 
+// log the greatest decrease in Profits along with the month by adding +1 to the month index
+console.log ("The greatest decrease in profits: "+finances[lossIndex+1][0] + "($"+ greatestLoss+")");
 
-//  count greatest increase in profits, store in IncreaseVariable
-//  console.log "Greatest Increase in Profits: "+IncreaseVariable
-//  count greatest decrease in profits, store in DecreaseVariable
-//  console.log "Greatest Decrease in Profits: "+DecreaseVariable
 
 
 
