@@ -117,7 +117,7 @@ var total = 0;
 for(var i=0; i<finances.length; i++){
     total = total + finances[i][1];
 }
-console.log("Total: $"+total);
+console.log("Net Profits Total: $"+total);
 
 //  count total profits, store in a ProfitVariable
 var profitsList = []
@@ -131,7 +131,7 @@ var totalProfits = 0;
 for(var i=0; i<profitsList.length; i++){
     totalProfits = totalProfits + profitsList[i];
 }
-console.log("Total profits: $"+totalProfits);
+console.log("Of which profits: $"+totalProfits);
 
 
 //  count total losses, store in a LossVariable
@@ -146,7 +146,7 @@ var totalLosses = 0;
 for(var i=0; i<lossesList.length; i++){
     totalLosses = totalLosses + lossesList[i];
 }
-console.log("Total losses: $"+totalLosses);
+console.log("Of which losses: $"+totalLosses);
 
 //  count differences in profits each month, store in a differences variable
 var differences = financeNum.slice(1).map((x,i)=> financeNum[i]-x);
@@ -163,12 +163,18 @@ console.log("Average Change in Profits: $"+averageChange.toFixed(2));
 
 //  count greatest increase in profits, store in IncreaseVariable
 //  console.log "Greatest Increase in Profits: "+IncreaseVariable
-
-
-
 //  count greatest decrease in profits, store in DecreaseVariable
 //  console.log "Greatest Decrease in Profits: "+DecreaseVariable
 
+// add  increase in profits each month to the nested finances array using a forEach loop
+// // diff.forEach(finances => {
+// //     var diff = ((activity[1] / 24) * 100).toFixed();
+// //     activity[2] = percentage + '%';
+// // });
+
+// // console.table(activities);
+
+// determine the largest and the smallest increase in profits each month (using Math.max?)
 
 
 
