@@ -8,7 +8,7 @@ The code was written following a week's introductory course into JavaScript and 
 
 The console output on the current dataset looks like this:
 
-![analysis](./assets/AnalysisScreenshot.PNG)
+![analysis](./Assets/AnalysisScreenshot.PNG)
 
 
 ## Usage
