@@ -158,7 +158,8 @@ for(var i=0; i<differences.length; i++){
 }
 //  divide the total of differences by the number of months to find the average change
 var averageChange = totalDiff/86;
-console.log("Average Change in Profits: $"+averageChange);
+console.log("Average Change in Profits: $"+averageChange.toFixed(2));
+
 
 //  count greatest increase in profits, store in IncreaseVariable
 //  console.log "Greatest Increase in Profits: "+IncreaseVariable
