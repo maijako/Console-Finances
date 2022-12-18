@@ -109,7 +109,7 @@ for(var i=0; i<finances.length; i++){
 }
 console.log("Net Profits Total: $"+total);
 
-//  count total profits, store in a ProfitVariable
+//  count total profits, store in a ProfitListVariable
 var profitsList = []
 for (var i = 0; i<financeNum.length; i++) {
     if(financeNum[i]>0) {
@@ -158,7 +158,8 @@ var greatestIncrease = (Math.max(...differences));
 // find the index position of the greatestIncrease variable 
 var greatestIndex = (differences.indexOf(greatestIncrease));
 
-// log the greatest increase in Profits along with the month by adding +1 to the month index
+// log the greatest increase in Profits along with the month by adding +1 to the index of the month
+//(adding +1 because the list of monthly fluctuations begins with the second month of the original array)
 console.log ("The greatest increase in profits: "+finances[greatestIndex+1][0] + " ($"+ greatestIncrease+")");
 
 
