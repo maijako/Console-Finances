@@ -149,7 +149,9 @@ for(var i=0; i<lossesList.length; i++){
 console.log("Of which losses: $"+totalLosses);
 
 //  count differences in profits each month, store in a differences variable
-var differences = financeNum.slice(1).map((x,i)=> financeNum[i]-x);
+var differences = financeNum.slice(1).map((x,i)=> x-financeNum[i]);
+
+
 
 //  calculate total of differences in profits over the entire period
 var totalDiff = 0;
@@ -157,16 +159,18 @@ for(var i=0; i<differences.length; i++){
     totalDiff = totalDiff + differences[i];
 }
 //  divide the total of differences by the number of months to find the average change
-var averageChange = totalDiff/86;
+var averageChange = totalDiff/finances.length;
 console.log("Average Change in Profits: $"+averageChange.toFixed(2));
 
 
-//  count greatest increase in profits, store in IncreaseVariable
-//  console.log "Greatest Increase in Profits: "+IncreaseVariable
-//  count greatest decrease in profits, store in DecreaseVariable
-//  console.log "Greatest Decrease in Profits: "+DecreaseVariable
+// add increase in profits each month to the nested finances array using a forEach loop
 
-// add  increase in profits each month to the nested finances array using a forEach loop
+console.log(Math.max(...differences));
+console.table(differences);
+
+
+
+
 // // diff.forEach(finances => {
 // //     var diff = ((activity[1] / 24) * 100).toFixed();
 // //     activity[2] = percentage + '%';
@@ -176,7 +180,10 @@ console.log("Average Change in Profits: $"+averageChange.toFixed(2));
 
 // determine the largest and the smallest increase in profits each month (using Math.max?)
 
-
+//  count greatest increase in profits, store in IncreaseVariable
+//  console.log "Greatest Increase in Profits: "+IncreaseVariable
+//  count greatest decrease in profits, store in DecreaseVariable
+//  console.log "Greatest Decrease in Profits: "+DecreaseVariable
 
 
 
