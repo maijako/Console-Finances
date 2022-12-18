@@ -87,12 +87,10 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-//  console.log Intro text;
+//  console.log Intro text + total months;
 console.log ("Financial Analysis");
 console.log ("-------------------------");
 
-//  count items in a string, store in a CountVariable
-//  console.log "Total Months: "+CountVariable;
 console.log ("Total Months: "+finances.length);
 
 
@@ -109,14 +107,14 @@ for(var i=0; i<finances.length; i++){
 }
 console.log("Net Profits Total: $"+total);
 
-//  count total profits, store in a ProfitListVariable
+//  count total profits, store in a ProfitList Variable
 var profitsList = []
 for (var i = 0; i<financeNum.length; i++) {
     if(financeNum[i]>0) {
         profitsList.push(financeNum[i]);
     }
 }
-//  console.log "Total Profits: "+ProfitVariable
+
 var totalProfits = 0;
 for(var i=0; i<profitsList.length; i++){
     totalProfits = totalProfits + profitsList[i];
@@ -124,7 +122,7 @@ for(var i=0; i<profitsList.length; i++){
 console.log("Of which profits: $"+totalProfits);
 
 
-//  count total losses, store in a LossVariable
+//  count total losses, store in a Variable
 var lossesList = []
 for (var i = 0; i<financeNum.length; i++) {
     if(financeNum[i]<0) {
