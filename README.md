@@ -7,7 +7,8 @@ This is a repository containing sample code that can be used to analyze a financ
 The code was written following a week's introductory course into JavaScript and uses simple for loops, concatenation, if statements and other beginner-friendly features.
 
 The console output on the current dataset looks like this:
-![finanical analysis](./assets/AnalysisScreenshot.PNG)
+
+![analysis](./assets/AnalysisScreenshot.PNG)
 
 
 ## Usage
