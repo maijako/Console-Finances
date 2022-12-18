@@ -169,7 +169,7 @@ console.log("Total losses: $"+totalLosses);
 
 
 // count differences in profits each month, store in a differences variable
-var differences = financeNum.slice(1).map((x,i)=> x-financeNum[i]);
+var differences = financeNum.slice(1).map((x,i)=> financeNum[i]-x);
 
 // differences.forEach((x,i) => console.log(
 //    `Profits from month ${i+1} to month ${i+2} increased by ${x}`
