@@ -171,10 +171,14 @@ console.log("Total losses: $"+totalLosses);
 // count differences in profits each month, store in a differences variable
 var differences = financeNum.slice(1).map((x,i)=> financeNum[i]-x);
 
-// differences.forEach((x,i) => console.log(
-//    `Profits from month ${i+1} to month ${i+2} increased by ${x}`
-// ));
-console.log(differences);
+//calculate total of differences in profits over the entire period
+var totalDiff = 0
+for(var i=0; i<differences.length; i++){
+    totalDiff = totalDiff + differences[i];
+}
+//divide the total of differences by the number of months to find the average change
+var averageChange = totalDiff/86
+console.log("Average Change in Profits: $"+averageChange);
 
 //  count average change, store in a ChangeVariable
 //  console.log "Average Change: "+ChangeVariable
