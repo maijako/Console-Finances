@@ -146,7 +146,7 @@ for(var i=0; i<differences.length; i++){
     totalDiff = totalDiff + differences[i];
 }
 //  divide the total of differences by the number of months to find the average change
-var averageChange = totalDiff/finances.length-1;
+var averageChange = totalDiff/(finances.length-1);
 console.log("Average Change in Profits: $"+averageChange.toFixed(2));
 
 
