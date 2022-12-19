@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a repository containing sample code that can be used to analyze a financial data set in a [browser console](https://maijako.github.io/Console-Finances){target="_blank"}. 
+This is a repository containing sample code that can be used to analyze a financial data set in a [browser console](https://maijako.github.io/Console-Finances).
 
 The code was written following a week's introductory course into JavaScript and uses simple for loops, concatenation, if statements and other beginner-friendly features.
 
