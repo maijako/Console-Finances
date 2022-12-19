@@ -146,7 +146,7 @@ for(var i=0; i<differences.length; i++){
     totalDiff = totalDiff + differences[i];
 }
 //  divide the total of differences by the number of months to find the average change
-var averageChange = totalDiff/finances.length;
+var averageChange = totalDiff/finances.length-1;
 console.log("Average Change in Profits: $"+averageChange.toFixed(2));
 
 
@@ -170,8 +170,3 @@ var lossIndex = (differences.indexOf(greatestLoss));
 
 // log the greatest decrease in Profits along with the month by adding +1 to the month index
 console.log ("The greatest decrease in profits: "+finances[lossIndex+1][0] + " ($"+ greatestLoss+")");
-
-
-
-
-
