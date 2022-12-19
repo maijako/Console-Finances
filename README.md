@@ -10,14 +10,14 @@ The console output on the current dataset looks like this:
 
 ```
 Financial Analysis
-index.js:92 -------------------------
-index.js:94 Total Months: 86
-index.js:108 Net Profits Total: $38382578
-index.js:122 Of which profits: $45710004
-index.js:137 Of which losses: $-7327426
-index.js:150 Average Change in Profits: $-2315.12
-index.js:161 The greatest increase in profits: Feb-2012 ($1926159)
-index.js:172 The greatest decrease in profits: Sep-2013 ($-2196167)
+-------------------------
+Total Months: 86
+Net Profits Total: $38382578
+Of which profits: $45710004
+Of which losses: $-7327426
+Average Change in Profits: $-2315.12
+The greatest increase in profits: Feb-2012 ($1926159)
+The greatest decrease in profits: Sep-2013 ($-2196167)
 ```
 
 
